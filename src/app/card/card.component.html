@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+    <div class="card-body cc-education-header cc-experience-header">
+      <p>{{data.date.from}} - {{data.date.to}}</p>
+      <div class="h5" *ngIf = "data.company">{{data.company}}</div>
+      <div class="h5" *ngIf = "data.institute_title">{{data.institute_title}}</div>
+    </div>
+  </div>
+  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+    <div class="card-body">
+      <div class="h5">{{data.title}}</div>
+      <p class="category" *ngIf = "data.institute">{{data.institute}}</p>
+      <p>{{data.description}}</p>
+    </div>
+  </div>
+</div>
